@@ -17,6 +17,7 @@ defmodule Trellotribute.Router do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
+    get "tasks", PageController, :tasks
   end
 
   # Other scopes may use custom stacks.
